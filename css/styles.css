@@ -149,18 +149,19 @@ section {
   display: flex;
   align-items: center;
   gap: 15px;
-  width: 300px;
-  margin: 50px auto;
+  width: 100%;
+  /* margin: 50px auto; */
 }
 
 .play-btn {
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
+  font-size: 10px;
+  width: 22px;
+  height: 25px;
   border: none;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: transparent;
   cursor: pointer;
+  color: #ffff;
 }
 
 .progress-container {
