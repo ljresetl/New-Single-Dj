@@ -3,6 +3,8 @@
 <symbol id="icon-Ellipse-1-2" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.5333" d="M31.733 16c0 8.689-7.044 15.733-15.733 15.733s-15.733-7.044-15.733-15.733c0-8.689 7.044-15.733 15.733-15.733s15.733 7.044 15.733 15.733z"></path>
 </symbol>
-
+<symbol id="icon-Rectangle-12" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M10.667 0.533h20.8v20.8c0 5.596-4.537 10.133-10.133 10.133h-20.8v-20.8c0-5.596 4.537-10.133 10.133-10.133z"></path>
+</symbol>
 </defs>
 </svg>
