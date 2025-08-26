@@ -71,8 +71,8 @@ img {
   margin: 0 auto;
   text-align: center;
   min-width: 350px;
-  max-width: 1110px;
-  padding: 0px 405px;
+  max-width: 1120px;
+  padding: 0px 5px;
 }
 
 section {
@@ -200,14 +200,14 @@ section {
 
 /* <section class="one"> */
 
-.one {
+/* .one {
   padding: 0px;
-}
+} */
 
 .one-container {
   display: flex;
   gap: 30px;
-  margin-top: -100px;
+  margin-top: -200px;
 }
 
 .item {
@@ -248,10 +248,13 @@ section {
 }
 
 /* <section class="two"> */
+.two {
+  padding: 50px 0px;
+}
 
 .two-container {
   display: flex;
-  padding: 0 300px;
+  /* padding: 0 300px; */
   justify-content: space-between;
   gap: 125px; /* відстань між лівою та правою колонкою */
   align-items: center; /* вирівнювання по центру вертикально */
@@ -376,8 +379,12 @@ section {
 }
 
 /* <section class="three"> */
+.three {
+  padding: 50px 0px;
+}
+
 .three-container {
-  padding: 0px 80px;
+  /* padding: 0px 80px; */
   display: flex;
   gap: 60px;
   border: 1px solid #fff;
@@ -427,8 +434,11 @@ section {
 }
 
 /* <section class="four"> */
+.four {
+  padding: 50px 0px;
+}
+
 .four-container {
-  padding: 0 20px;
   gap: 20px;
 }
 
@@ -439,6 +449,7 @@ section {
   border-radius: 50%; /* робимо круглим */
   min-width: 436px;
   min-height: 436px;
+  transition: transform 0.1s linear;
 }
 
 .image-wrapper::before {
@@ -517,6 +528,31 @@ section {
   font-size: 38px;
   color: #fff;
   margin-bottom: 60px;
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 600px; /* ширина контейнера */
+  position: relative;
+}
+
+.text-content-h-music span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Анімація тільки якщо доданий клас .scrolling */
+.text-content-h-music span.scrolling {
+  animation: marquee-alt 10s ease-in-out infinite alternate;
+}
+
+@keyframes marquee-alt {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .follow-me {
@@ -537,5 +573,115 @@ section {
   gap: 10px;
   font-weight: 600;
   font-size: 14px;
+  color: #fff;
+}
+
+/* <section class="five"> */
+.five {
+  padding: 60px 0px;
+}
+
+.five-container {
+  display: flex;
+  gap: 30px;
+}
+
+.five-container-div-two {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.img-wrapper-img-five-two,
+.img-wrapper-img-five-three {
+  border-radius: 30px 0;
+  width: 255px;
+  height: 235px;
+}
+
+.img-wrapper-img-five-four {
+  border-radius: 30px 0;
+  width: 540px;
+  height: 235px;
+}
+
+/* <section class="six"> */
+.six {
+  padding: 50px 0px;
+}
+
+.six-container-ul {
+  display: flex;
+  gap: 30px;
+}
+
+.six-container-li {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  background: #2f2b2b;
+  border-radius: 30px 0;
+}
+
+.six-container-img {
+  border-radius: 30px 0;
+}
+
+.six-container-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto; /* для другого ряду: дата + кнопка */
+  grid-template-rows: auto auto; /* два ряди */
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.six-container-p:nth-child(1) {
+  grid-column: 1 / -1; /* перший ряд займає всю ширину */
+}
+
+.six-container-p:nth-child(2) {
+  grid-column: 1 / -1; /* другий ряд (ще верхній ряд) */
+}
+
+/* третій ряд: дата та кнопка */
+.six-container-p:nth-child(3) {
+  grid-column: 1 / 2;
+}
+
+.six-container-bottom button {
+  grid-column: 2 / 3;
+}
+
+.six-p-three {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+  margin-top: 24px;
+}
+
+.six-p-one {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.six-p-two {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.six-container-button {
+  border-radius: 30px 0;
+  width: 180px;
+  height: 60px;
+  background-color: #7a66cc;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
   color: #fff;
 }
