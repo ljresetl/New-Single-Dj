@@ -471,6 +471,8 @@ section {
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
 .track-item {
@@ -515,4 +517,25 @@ section {
   font-size: 38px;
   color: #fff;
   margin-bottom: 60px;
+}
+
+.follow-me {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-link-spoty,
+.social-link-jabko {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
 }
