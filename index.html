@@ -43,7 +43,6 @@
           </div>
         </div>
       </div>
-      <script src="./script.js" defer></script>
     </header>
 
     <main>
@@ -146,7 +145,91 @@
       </section>
 
       <section class="four">
-        <div class="container four-container"></div>
+        <div class="container four-container">
+          <div class="image-wrapper">
+            <img
+              src="./images/four-container.png"
+              alt="Circle PNG"
+              class="circle-img"
+            />
+          </div>
+          <div class="play-music">
+            <h2 class="text-content-h-music">Last tracks</h2>
+
+            <div class="progress-container-music">
+              <div class="progress-music"></div>
+            </div>
+            <span class="timer">0:00 / 0:00</span>
+
+            <ul class="track-list">
+              <li class="track-item">
+                <button class="play-btn-track">►</button>
+                <span class="track-name"
+                  >3LAU, Bright Lights — How You Love Me</span
+                >
+                <audio
+                  id="audioOne"
+                  src="./music/3LAU feat. Bright Lights - How You Love Me (Original Mix).mp3"
+                ></audio>
+              </li>
+              <li class="track-item">
+                <button class="play-btn-track">►</button>
+                <span class="track-name">Joy_Peters-One_Night_In_Love </span>
+                <audio
+                  id="audioTwo"
+                  src="./music/Joy_Peters-One_Night_In_Love.mp3"
+                ></audio>
+              </li>
+              <li class="track-item">
+                <button class="play-btn-track">►</button>
+                <span class="track-name"
+                  >Pink Is Punk, Benny Benassi, Bright Lights — Ghost</span
+                >
+                <audio
+                  id="audioThree"
+                  src="./music/kasimoff_-_you_again.mp3"
+                ></audio>
+              </li>
+              <li class="track-item">
+                <button class="play-btn-track">►</button>
+                <span class="track-name"
+                  >Hardwell, Dyro, Bright Lights — Never Say Goodbye</span
+                >
+                <audio
+                  id="audioFour"
+                  src="./music/kasimoff_-_you_again.mp3"
+                ></audio>
+              </li>
+              <li class="track-item">
+                <button class="play-btn-track">►</button>
+                <span class="track-name"
+                  >Zeds Dead, Dirtyphonics, Bright Lights — Where Are You
+                  Now</span
+                >
+                <audio
+                  id="audioFive"
+                  src="./music/kasimoff_-_you_again.mp3"
+                ></audio>
+              </li>
+              <li class="track-item">
+                <button class="play-btn-track">►</button>
+                <span class="track-name"
+                  >Zedd, Bright Lights — Follow You Down
+                </span>
+                <audio
+                  id="audioSix"
+                  src="./music/kasimoff_-_you_again.mp3"
+                ></audio>
+              </li>
+            </ul>
+
+            <div class="follow-me">
+              <span>Follow me:</span>
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">Spotify</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -155,5 +238,7 @@
         <p class="container_footer-p">© 2025 Vitalii Baranov</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
+    <script src="./song.js"></script>
   </body>
 </html>

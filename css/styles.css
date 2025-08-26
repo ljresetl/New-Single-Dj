@@ -278,6 +278,21 @@ section {
   color: #fff;
   margin-bottom: 60px;
   white-space: nowrap;
+  position: relative;
+  text-align: center;
+}
+
+.text-content-h::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px; /* ширина іконки */
+  height: 31px; /* висота іконки */
+  background-image: url("../images/text-content-h.svg"); /* SVG */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .text-content-p {
@@ -355,7 +370,7 @@ section {
   transform: translateY(-50%);
   width: 30px; /* ширина іконки */
   height: 30px; /* висота іконки */
-  background-image: url("../images/Rectangle.svg"); /* твій SVG */
+  background-image: url("../images/Rectangle.svg"); /* SVG */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -409,4 +424,95 @@ section {
   border-top: 1px solid #fff; /* нижній бордер */
   opacity: 0.6;
   padding-bottom: 40px;
+}
+
+/* <section class="four"> */
+.four-container {
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  border: 16px solid #7a66cc; /* зовнішній бордер */
+  border-radius: 50%; /* робимо круглим */
+  min-width: 436px;
+  min-height: 436px;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -30px; /* зміщення для зовнішнього бордера */
+  left: -30px;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  border: 16px solid #60597f; /* другий бордер іншого кольору */
+  border-radius: 50%;
+  pointer-events: none; /* щоб не заважав клікам */
+}
+
+.circle-img {
+  display: block;
+  border-radius: 50%; /* робимо саму картинку круглою */
+  width: 436px;
+  height: 436px;
+}
+
+.play-music {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.track-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.track-name {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.progress-container-music {
+  width: 100%;
+  height: 1px; /* висота лінії */
+  background-color: #8e8888; /* фон бару */
+  border-radius: 3px;
+  margin: 20px 0;
+}
+
+.progress-music {
+  width: 0%; /* початкова ширина */
+  height: 100%;
+  background-color: #007bff; /* колір прогресу */
+  border-radius: 3px;
+  transition: width 0.2s linear;
+}
+
+.timer {
+  display: block;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #cec4c4;
+  margin-bottom: 20px;
+}
+
+.text-content-h-music {
+  font-weight: 700;
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 60px;
 }
