@@ -584,6 +584,7 @@ section {
 .five-container {
   display: flex;
   gap: 30px;
+  position: relative;
 }
 
 .five-container-div-two {
@@ -592,17 +593,35 @@ section {
   flex-wrap: wrap;
 }
 
+.img-wrapper-img-five,
+.img-wrapper-img-five-five {
+  border-radius: 30px 0 30px 0;
+}
+
 .img-wrapper-img-five-two,
 .img-wrapper-img-five-three {
-  border-radius: 30px 0;
+  border-radius: 30px 0px;
   width: 255px;
   height: 235px;
+  display: inline-block;
 }
 
 .img-wrapper-img-five-four {
-  border-radius: 30px 0;
+  border-radius: 30px 0px;
   width: 540px;
   height: 235px;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 100px; /* відступ віднизу картинки */
+  left: 420px; /* відступ зліва */
+  color: #fff; /* колір тексту */
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #7a66cc;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* для видимості на будь-якому фоні */
 }
 
 /* <section class="six"> */
@@ -684,4 +703,82 @@ section {
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
+}
+
+/* <section class="seven"> */
+.seven {
+  padding: 40px 0px;
+}
+
+.p-my {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+}
+
+.my-p {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+
+.seven-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.seven-p {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* дві колонки однакової ширини */
+  gap: 20px 30px; /* відступи між рядками і колонками */
+}
+
+.seven-p-p {
+  margin: 0; /* прибираємо стандартні відступи p */
+}
+
+.icon-grid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  color: #fff; /* можна змінити на будь-який колір */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.mobile-menu-btn-svg {
+  fill: #fff;
+}
+
+.icon-btn {
+  display: inline-flex; /* щоб працював padding */
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* розмір блоку */
+  height: 60px;
+  background-color: #7a66cc; /* колір фону */
+  border-radius: 50%;
+}
+
+/* <footer class="footer"> */
+.container-footer-p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
 }
