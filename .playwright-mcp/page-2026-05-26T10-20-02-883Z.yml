@@ -1,0 +1,179 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img "Bright Lights logo" [ref=e6]
+        - img "Bright Lights" [ref=e7]
+      - navigation "Main navigation" [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "About" [ref=e11] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e12]:
+            - link "News" [ref=e13] [cursor=pointer]:
+              - /url: "#news"
+          - listitem [ref=e14]:
+            - link "Music" [ref=e15] [cursor=pointer]:
+              - /url: "#music"
+          - listitem [ref=e16]:
+            - link "Media" [ref=e17] [cursor=pointer]:
+              - /url: "#media"
+          - listitem [ref=e18]:
+            - link "Tours" [ref=e19] [cursor=pointer]:
+              - /url: "#tours"
+          - listitem [ref=e20]:
+            - link "Contacts" [ref=e21] [cursor=pointer]:
+              - /url: "#contacts"
+    - generic [ref=e23]:
+      - heading "New Single" [level=1] [ref=e24]
+      - paragraph [ref=e25]: You Again
+    - region "Audio player" [ref=e26]:
+      - generic [ref=e27]:
+        - button "Play or pause You Again" [ref=e28] [cursor=pointer]: ►
+        - generic "Track progress"
+        - text: 0:00 / 0:00
+  - main [ref=e29]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img "Working on full-length album" [ref=e33]
+        - paragraph [ref=e34]: Working on my upcoming full-length album releasing later this year.
+      - generic [ref=e35]:
+        - img "Halloween vibes new track" [ref=e36]
+        - paragraph [ref=e37]: Halloween vibes. Listen my new track!
+      - generic [ref=e38]:
+        - img "WarForLove out now" [ref=e39]
+        - paragraph [ref=e40]: WarForLove is OUT NOW!! Stream it here!
+    - region "Bright Lights" [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - heading "Bright Lights" [level=2] [ref=e44]
+          - paragraph [ref=e45]: Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous
+          - paragraph [ref=e46]: "pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's \"Language,\" 3LAU's \"How You Love Me\" and her own single \"Runaway.\" She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, \"Put It Down,\" reached 1 million streams in the first week, releasing independently."
+          - list [ref=e47]:
+            - listitem [ref=e48]: "Based in: Los Angeles"
+            - listitem [ref=e49]: Founded in 2011
+            - listitem [ref=e50]: "Genre: #DancePop"
+            - listitem [ref=e51]: "Label: 333 Recordings"
+        - generic [ref=e52]:
+          - img [ref=e53]
+          - img [ref=e54]
+    - region "Press" [ref=e55]:
+      - heading "Press" [level=2] [ref=e56]
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - blockquote [ref=e59]: "\"In an age where mainstream music is designed to be as easily consumed as possible, listening to Bright Lights is refreshing, to say the least. Her sound is perfect for radio but complex enough to separate her from other pop newcomers.\""
+          - link "PopULove.net" [ref=e60] [cursor=pointer]:
+            - /url: https://populove.net
+        - img "Bright Lights press photo" [ref=e62]
+    - region "Last tracks" [ref=e63]:
+      - generic [ref=e64]:
+        - img "Album artwork" [ref=e66]
+        - generic [ref=e67]:
+          - heading "Last tracks" [level=2] [ref=e68]
+          - generic "Track progress"
+          - text: 0:00 / 0:00
+          - list "Track list" [ref=e69]:
+            - listitem [ref=e70]:
+              - button "Play 3LAU, Bright Lights — How You Love Me" [ref=e71] [cursor=pointer]: ►
+              - text: 3LAU, Bright Lights — How You Love Me
+            - listitem [ref=e72]:
+              - button "Play Joy Peters — One Night In Love" [ref=e73] [cursor=pointer]: ►
+              - text: Joy Peters — One Night In Love
+            - listitem [ref=e74]:
+              - button "Play Village People — Y.M.C.A." [ref=e75] [cursor=pointer]: ►
+              - text: Village People — Y.M.C.A.
+            - listitem [ref=e76]:
+              - button "Play Andrew Lias & Raina June — Lover On The Line" [ref=e77] [cursor=pointer]: ►
+              - text: Andrew Lias & Raina June — Lover On The Line
+            - listitem [ref=e78]:
+              - button "Play Bad Boys Blue — Pretty Young Girl" [ref=e79] [cursor=pointer]: ►
+              - text: Bad Boys Blue — Pretty Young Girl
+            - listitem [ref=e80]:
+              - button "Play Gloria Gaynor — I Will Survive" [ref=e81] [cursor=pointer]: ►
+              - text: Gloria Gaynor — I Will Survive
+          - generic [ref=e82]:
+            - text: "Follow me:"
+            - link "Follow on Instagram" [ref=e83] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e84]
+              - text: Instagram
+            - link "Follow on Spotify" [ref=e85] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e86]
+              - text: Spotify
+    - region "Media" [ref=e87]:
+      - heading "Media" [level=2] [ref=e88]
+      - generic [ref=e89]:
+        - img "Bright Lights live performance" [ref=e91]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - img "EDC Las Vegas" [ref=e94]
+            - img "Festival performance" [ref=e95]
+          - generic [ref=e96]:
+            - img "EDC Las Vegas Mainstage" [ref=e97]
+            - text: EDC Las Vegas Mainstage
+        - img "Bright Lights DJ set" [ref=e99]
+    - region "Tour dates" [ref=e100]:
+      - heading "Tour dates" [level=2] [ref=e101]
+      - list [ref=e103]:
+        - listitem [ref=e104]:
+          - img "Chandler AZ venue" [ref=e105]
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: Chandler, AZ
+            - paragraph [ref=e108]: The Park at Wild Horse Pass
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: Apr 02 2021
+              - button "Buy tickets for Chandler AZ show" [ref=e111] [cursor=pointer]: tickets
+        - listitem [ref=e112]:
+          - img "Swag Ibiza Club" [ref=e113]
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: Ibiza, IBZ
+            - paragraph [ref=e116]: Swag Ibiza Club
+            - generic [ref=e117]:
+              - paragraph [ref=e118]: Jul 08 2021
+              - button "Buy tickets for Swag Ibiza show" [ref=e119] [cursor=pointer]: tickets
+        - listitem [ref=e120]:
+          - img "El Swing Ibiza" [ref=e121]
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: Ibiza, IBZ
+            - paragraph [ref=e124]: El Swing Ibiza
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: Jul 10 2021
+              - button "Buy tickets for El Swing Ibiza show" [ref=e127] [cursor=pointer]: tickets
+    - region "Contacts" [ref=e128]:
+      - heading "Contacts" [level=2] [ref=e129]
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - img "Bright Lights logo" [ref=e132]
+          - img "Bright Lights" [ref=e133]
+        - generic [ref=e134]:
+          - paragraph [ref=e135]: "Artist Management:"
+          - paragraph [ref=e136]: Jake Henny
+          - paragraph [ref=e137]: "Email:"
+          - paragraph [ref=e138]:
+            - link "jake@brightlightsofficial.com" [ref=e139] [cursor=pointer]:
+              - /url: mailto:jake@brightlightsofficial.com
+        - navigation "Social media" [ref=e140]:
+          - link "Apple Music" [ref=e141] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e142]
+          - link "Spotify" [ref=e144] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e145]
+          - link "Instagram" [ref=e147] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e148]
+          - link "YouTube" [ref=e150] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e151]
+          - link "Twitter" [ref=e153] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e154]
+          - link "Facebook" [ref=e156] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e157]
+  - contentinfo [ref=e159]:
+    - paragraph [ref=e161]:
+      - link "Layout — FIGMA" [ref=e162] [cursor=pointer]:
+        - /url: https://www.figma.com/design/XCZd0nP2whQMVGLig78u8W/Maket-DJ?node-id=0-1&p=f&t=WiTElBUuG12IGh9F-0
+      - text: © 2025 Vitalii Baranov

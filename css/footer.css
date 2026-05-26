@@ -1,0 +1,30 @@
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-container {
+  justify-content: center;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-text a {
+  color: var(--color-primary-light);
+  transition: color var(--transition);
+}
+
+.footer-text a:hover { color: #fff; }
+
+/* ======================== DESKTOP ======================== */
+@media (min-width: 1024px) {
+  .footer-text { font-size: 16px; }
+}

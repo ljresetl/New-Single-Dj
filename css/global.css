@@ -1,0 +1,156 @@
+/* ============================================================
+   GLOBAL — Variables, Reset, Container, Utilities
+   ============================================================ */
+
+/* === CSS VARIABLES === */
+:root {
+  --color-primary: #7a66cc;
+  --color-primary-light: #a68ef7;
+  --color-primary-dark: #60597f;
+  --color-bg: #1c1b21;
+  --color-bg-card: #252330;
+  --color-text: #fff;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --gradient-primary: linear-gradient(135deg, #7a66cc, #a68ef7);
+  --glow-sm: 0 0 16px rgba(122, 102, 204, 0.35);
+  --glow-md: 0 0 32px rgba(122, 102, 204, 0.5);
+  --glow-hover: 0 8px 32px rgba(122, 102, 204, 0.6);
+  --transition: 0.3s ease;
+  --radius-sm: 10px;
+  --radius-card: 20px 0;
+  --radius-btn: 30px 0;
+  --section-gap: 80px;
+}
+
+/* === RESET === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body only — do NOT apply background to ul/ol */
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background: var(--color-bg);
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, button {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: currentColor;
+  font-style: normal;
+  background: transparent;
+  padding: 0;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+address {
+  font-style: normal;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* === CONTAINER === */
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* === SECTION PADDING === */
+section {
+  padding: 60px 0;
+}
+
+/* === UTILITIES === */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* === SCROLL REVEAL === */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.15s; }
+.reveal-delay-2 { transition-delay: 0.30s; }
+
+/* === FOCUS STYLES === */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ======================== TABLET ======================== */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  section {
+    padding: 100px 0;
+  }
+}
+
+/* ======================== DESKTOP ======================== */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 120px 0;
+  }
+}

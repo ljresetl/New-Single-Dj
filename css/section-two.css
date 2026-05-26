@@ -1,0 +1,187 @@
+/* ============================================================
+   SECTION TWO — About / Bio
+   ============================================================ */
+.two {
+  padding: 80px 0 60px;
+}
+
+.two-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ---- Bio text ---- */
+.bio-text {
+  width: 100%;
+  text-align: left;
+}
+
+.bio-heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 68px;
+  text-align: left;
+}
+
+.bio-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 28px;
+  background-image: url("../images/text-content-h.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bio-p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.bio-p--top { margin-bottom: 14px; }
+
+.bio-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.bio-list li {
+  position: relative;
+  padding-left: 38px;
+  list-style: none;
+}
+
+.bio-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/Rectangle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ---- Bio photos ---- */
+.bio-photos {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  flex-shrink: 0;
+  overflow: visible;
+  order: -1;
+}
+
+.bio-photo-back {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.35;
+}
+
+.bio-photo-front {
+  position: absolute;
+  top: -20%;
+  left: -8%;
+  width: 108%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+/* ======================== TABLET ======================== */
+@media (min-width: 768px) {
+  .two-container {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .bio-text {
+    flex: 1;
+    max-width: 420px;
+  }
+
+  .bio-heading {
+    font-size: 38px;
+    text-align: left;
+  }
+
+  .bio-photos {
+    width: 280px;
+    height: 340px;
+    margin-top: 0;
+    order: 0;
+  }
+}
+
+/* ======================== DESKTOP ======================== */
+@media (min-width: 1024px) {
+  .two {
+    padding: 120px 0;
+  }
+
+  .two-container {
+    gap: 100px;
+    align-items: flex-end;
+  }
+
+  .bio-text { max-width: 540px; }
+
+  .bio-heading {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .bio-p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .bio-list {
+    font-size: 18px;
+    gap: 30px 80px;
+  }
+
+  .bio-list li { padding-left: 50px; }
+
+  .bio-list li::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bio-photos {
+    width: 350px;
+    height: 410px;
+  }
+
+  .bio-photo-front {
+    top: -45%;
+    left: -18%;
+    width: 118%;
+  }
+}
