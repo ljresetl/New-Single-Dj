@@ -1341,12 +1341,23 @@ button:focus-visible {
    HEADER — Mobile First
    ============================================================ */
 .header {
-  background-image: url("../images/background-top1.jpg");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Оформлюємо фонову картинку, яка тепер лежить в HTML */
+.header-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1; /* Ховаємо картинку під контент та навігацію */
 }
 
 /* ---- Top bar ---- */
